@@ -1,0 +1,27 @@
+The solution to these errors is to use consistent spacing and compatible units:
+
+```css
+/* Correct usage of calc() */
+.element {
+  width: calc(100% - 10px);
+}
+
+.element2 {
+  width: calc( 100% - 10px ); /*Consistent Spacing*/
+}
+
+.element3 {
+  width: calc(100vw - 10vw); /*Compatible units*/
+}
+
+/* Incorrect usage */
+/*.element {
+  width: calc(100% - 10 px); /*Inconsistent spacing*/
+}
+
+.element {
+  width: calc(100% - 10em); /*Incompatible units*/
+}*/
+```
+
+Always ensure that you are using compatible units and that your spacing is consistent when using the `calc()` function in CSS to avoid these errors.
